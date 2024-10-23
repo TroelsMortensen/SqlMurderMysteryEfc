@@ -12,10 +12,8 @@ public class Person
 
     public string AddressStreetName { get; set; }
 
-    public string Ssn { get; set; }
+    public string? Ssn { get; set; }
     
-    // public virtual ICollection<GetFitNowMember> GetFitNowMembers { get; set; } = new List<GetFitNowMember>();
-
     public DriversLicense? License { get; set; }
 
     public Income? Income { get; set; }

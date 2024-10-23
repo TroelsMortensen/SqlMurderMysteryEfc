@@ -39,16 +39,14 @@ public class SqlMurderMysteryContext : DbContext
 
             builder.HasOne<Income>(person => person.Income)
                 .WithOne(income => income.Person)
-                .HasForeignKey<Income>(income => income.Ssn)
-                .HasPrincipalKey<Person>(person => person.Ssn);
+                .HasForeignKey<Person>(person => person.Ssn);
         });
 
         modelBuilder.Entity<DriversLicense>(builder =>
         {
             builder.HasOne<Person>(license => license.Person)
                 .WithOne(person => person.License)
-                .HasForeignKey<DriversLicense>(license => license.PersonId)
-                .HasPrincipalKey<Person>(person => person.Id);
+                .HasForeignKey<Person>(person => person.LicenseId);
         });
 
         modelBuilder.Entity<Income>(builder =>
