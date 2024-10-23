@@ -1,10 +1,12 @@
 ﻿namespace SqlMurderMystery.Entities;
 
-public partial class Interview
+public class Interview
 {
-    public int? PersonId { get; set; }
+    public int Id { get; set; }
+    
+    public int PersonId { get; set; }
 
-    public string? Transcript { get; set; }
+    public string Transcript { get; set; }
 
-    public virtual Person? Person { get; set; }
+    public Person Person { get; set; }
 }

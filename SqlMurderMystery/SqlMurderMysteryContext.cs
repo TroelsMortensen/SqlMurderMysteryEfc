@@ -9,20 +9,20 @@ namespace SqlMurderMystery;
 public class SqlMurderMysteryContext : DbContext
 {
     public DbSet<CrimeSceneReport> CrimeSceneReports => Set<CrimeSceneReport>();
-    //
-    // public DbSet<DriversLicense> DriversLicenses => Set<DriversLicense>();
-    //
+    
+    public DbSet<DriversLicense> DriversLicenses => Set<DriversLicense>();
+    
     // public DbSet<FacebookEventCheckin> FacebookEventCheckins => Set<FacebookEventCheckin>();
-    //
+    
     // public DbSet<GetFitNowCheckIn> GetFitNowCheckIns => Set<GetFitNowCheckIn>();
-    //
+    
     // public DbSet<GetFitNowMember> GetFitNowMembers => Set<GetFitNowMember>();
-    //
+    
     // public DbSet<Income> Incomes => Set<Income>();
-    //
-    // public DbSet<Interview> Interviews => Set<Interview>();
-    //
-    // public DbSet<Person> People => Set<Person>();
+    
+    public DbSet<Interview> Interviews => Set<Interview>();
+    
+    public DbSet<Person> People => Set<Person>();
 
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
