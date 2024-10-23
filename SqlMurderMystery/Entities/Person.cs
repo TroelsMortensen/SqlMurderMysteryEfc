@@ -23,5 +23,6 @@ public class Person
     public List<Interview> Interviews { get; set; }
 
     public List<FacebookEventCheckin> FacebookEventCheckins { get; set; }
-    // public virtual Income? SsnNavigation { get; set; }
+
+    public GetFitNowMember? GetFitNowMember { get; set; }    
 }
