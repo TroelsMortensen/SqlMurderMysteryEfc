@@ -58,7 +58,8 @@ public class SqlMurderMysteryContext : DbContext
 
         modelBuilder.Entity<FacebookEventCheckin>(builder =>
         {
-            builder.HasKey(f => new { f.EventId, f.PersonId });K
+            builder.HasKey(f => new { f.EventId, f.PersonId });
         });
     }
+    
 }
