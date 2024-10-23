@@ -1,7 +1,9 @@
 namespace SqlMurderMystery;
 
-public class UnitTest1
+public class Queries
 {
+    private AppContext ctx = new();
+    
     [Fact]
     public void Test1()
     {

@@ -6,7 +6,7 @@ using SqlMurderMystery.Entities;
 
 namespace SqlMurderMystery;
 
-public class SqlMurderMysteryContext : DbContext
+public class AppContext : DbContext
 {
     public DbSet<CrimeSceneReport> CrimeSceneReports => Set<CrimeSceneReport>();
     
