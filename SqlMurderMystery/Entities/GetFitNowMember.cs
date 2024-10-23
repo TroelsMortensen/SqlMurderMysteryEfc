@@ -14,5 +14,5 @@ public class GetFitNowMember
 
     public Person Person { get; set; }
 
-    public List<GetFitNowCheckIn> Type { get; set; }
+    public List<GetFitNowCheckIn> CheckIns { get; set; }
 }

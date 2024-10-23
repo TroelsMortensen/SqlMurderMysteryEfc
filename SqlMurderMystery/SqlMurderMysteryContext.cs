@@ -14,11 +14,11 @@ public class SqlMurderMysteryContext : DbContext
     
     public DbSet<FacebookEventCheckin> FacebookEventCheckins => Set<FacebookEventCheckin>();
     
-    // public DbSet<GetFitNowCheckIn> GetFitNowCheckIns => Set<GetFitNowCheckIn>();
+    public DbSet<GetFitNowCheckIn> GetFitNowCheckIns => Set<GetFitNowCheckIn>();
     
-    // public DbSet<GetFitNowMember> GetFitNowMembers => Set<GetFitNowMember>();
+    public DbSet<GetFitNowMember> GetFitNowMembers => Set<GetFitNowMember>();
     
-    // public DbSet<Income> Incomes => Set<Income>();
+    public DbSet<Income> Incomes => Set<Income>();
     
     public DbSet<Interview> Interviews => Set<Interview>();
     
