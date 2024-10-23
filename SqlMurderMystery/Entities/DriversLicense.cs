@@ -21,4 +21,5 @@ public class DriversLicense
     public string CarModel { get; set; }
 
     public Person Person { get; set; }
+    public int PersonId { get; set; }
 }

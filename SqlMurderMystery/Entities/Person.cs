@@ -18,5 +18,6 @@ public class Person
 
     public DriversLicense? License { get; set; }
 
+    public Income? Income { get; set; }
     // public virtual Income? SsnNavigation { get; set; }
 }
