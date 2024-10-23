@@ -21,5 +21,7 @@ public class Person
     public Income? Income { get; set; }
 
     public List<Interview> Interviews { get; set; }
+
+    public List<FacebookEventCheckin> FacebookEventCheckins { get; set; }
     // public virtual Income? SsnNavigation { get; set; }
 }

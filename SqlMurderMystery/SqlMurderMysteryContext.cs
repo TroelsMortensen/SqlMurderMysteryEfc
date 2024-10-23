@@ -12,7 +12,7 @@ public class SqlMurderMysteryContext : DbContext
     
     public DbSet<DriversLicense> DriversLicenses => Set<DriversLicense>();
     
-    // public DbSet<FacebookEventCheckin> FacebookEventCheckins => Set<FacebookEventCheckin>();
+    public DbSet<FacebookEventCheckin> FacebookEventCheckins => Set<FacebookEventCheckin>();
     
     // public DbSet<GetFitNowCheckIn> GetFitNowCheckIns => Set<GetFitNowCheckIn>();
     
@@ -54,7 +54,11 @@ public class SqlMurderMysteryContext : DbContext
         modelBuilder.Entity<Income>(builder =>
         {
             builder.HasKey(i => i.Ssn);
-            
+        });
+
+        modelBuilder.Entity<FacebookEventCheckin>(builder =>
+        {
+            builder.HasKey(f => new { f.EventId, f.PersonId });K
         });
     }
 }
