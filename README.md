@@ -19,6 +19,7 @@ Most of the entities have navigation properties between them. A few entities are
 Here is the diagram 
 
 <img src="https://github.com/TroelsMortensen/SqlMurderMysteryEfc/blob/master/SqlMurderMystery/SqlMurderMysteryClassDiagram.png" alt="drawing" width="1000"/>
+
 ## Setup
 
 Create a new solution by cloning this project from e.g. Rider.
